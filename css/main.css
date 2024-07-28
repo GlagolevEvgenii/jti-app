@@ -302,6 +302,53 @@ main {
     width: 100%;
     margin: 0 auto;
 }
+.radio-holder{
+    display: flex;
+    flex-direction: column;
+    gap:26px;
+    margin-bottom: 44px;
+}
+.form-control {
+    color: #000;
+    text-align: center;
+    font-family: "Noto Sans Armenian";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.66px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:13px;
+}
+
+input[type="radio"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #FFFFFF;
+    margin: 0;
+    font: inherit;
+    width: 80px;
+    height: 80px;
+    border: 1px solid #CCCCCC;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+}
+
+input[type="radio"]::before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #C6C9CC;
+}
+
+input[type="radio"]:checked::before {
+    background: #048162;
+}
+
 @media (min-width: 480px) {
     .regular-title.small-mode{
         font-size: 30px;
